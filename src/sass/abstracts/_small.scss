@@ -1,0 +1,135 @@
+
+@media (min-width: 768px) {
+	.section__headline {
+		font-size: 5rem;
+	}
+	.nav-mobile {
+		display: none;
+	}
+
+	.nav-desktop {
+		display: block;
+	}
+
+	.header {
+		background-image: url('/dist/img/header-big.jpg');
+
+		&__hero-text {
+			padding-left: 2.5em;
+		}
+	}
+
+	.about-us {
+		margin-bottom: 2em;
+		&__img {
+			display: none;
+		}
+
+		&__img2 {
+			display: block;
+		}
+
+		&__text {
+			margin: 1em 1em 0 0;
+
+			&--headline {
+				font-size: 4rem;
+			}
+		}
+	}
+
+	.adventure {
+		background-image: url('/dist/img/girl-big.jpg');
+		&__headline {
+			font-size: 3.5rem;
+			padding: 0.5em;
+		}
+	}
+
+	.offert {
+		&__paragraph {
+			font-size: 3rem;
+		}
+
+		&__card {
+			padding: 3em 0;
+			&__headline {
+				font-size: 4.5rem;
+			}
+
+			&__price {
+				margin: 2rem 0;
+				font-size: 5rem;
+			}
+
+			&__paragraph {
+				margin-top: 10px;
+				font-size: 3rem;
+			}
+
+			&__button {
+				font-size: 3rem;
+			}
+		}
+	}
+	.footer {
+		&__date {
+			padding: 3em 0;
+		}
+
+		&-content {
+			padding: 3em;
+			&__logo {
+				font-size: 4rem;
+			}
+
+			&__info-card {
+				margin-left: 2em;
+
+				&__headline {
+					padding: 0 0 1rem 0;
+					font-size: 4rem;
+				}
+
+				&__link {
+					display: block;
+					padding: 1em 0;
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+
+	.form {
+		padding: 10em 0 7em 0;
+		&__content {
+			font-size: 2.5rem;
+			&__contact {
+				label {
+					padding: 0.7em 0;
+				}
+
+				input {
+					height: 40px;
+				}
+
+				textarea {
+					resize: vertical;
+					margin-bottom: 1em;
+					height: 80px;
+				}
+
+				&__button {
+					font-size: 2rem;
+					padding: 0.5em 1em;
+				}
+			}
+
+			&__card {
+				&__paragraph {
+					margin: 1em 0;
+				}
+			}
+		}
+	}
+}

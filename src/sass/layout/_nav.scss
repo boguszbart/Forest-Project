@@ -1,0 +1,120 @@
+@use '../utilities/colors' as c;
+
+.nav-mobile {
+	position: fixed;
+	background-color: #fff;
+	height: 80px;
+	width: 100%;
+	z-index: 50;
+	&__logo {
+		position: fixed;
+		display: flex;
+		align-items: center;
+		top: 15px;
+		left: 15px;
+		font-size: 3rem;
+	}
+
+	&__items {
+		position: fixed;
+		top: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 100%;
+		background-color: black;
+		z-index: 100;
+		transition: transform 1s;
+		transform: translateX(100%);
+
+		&--active {
+			transform: translateX(0%);
+		}
+	}
+
+	&__item {
+		position: relative;
+		display: block;
+		font-size: 3.5rem;
+		text-decoration: none;
+		width: 300px;
+		padding: 1em 3em;
+		color: c.$pure-white;
+
+		&::before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 80px;
+			width: 2px;
+			border: 1px solid white;
+			height: 90%;
+			color: c.$pure-white;
+		}
+	}
+
+	&__burger {
+		position: fixed;
+		right: 20px;
+		top: 15px;
+		background: none;
+		border: 0;
+		font-size: 3rem;
+		padding: 1rem;
+		z-index: 1000;
+		transition: color 0.5s;
+
+		&--white {
+			color: c.$pure-white;
+		}
+	}
+
+	h2 {
+		margin-left: 3px;
+		display: inline-block;
+	}
+}
+
+.nav-desktop {
+	display: none;
+	position: fixed;
+	width: 100%;
+	background-color: c.$background-main-color;
+	z-index: 50;
+
+	&__container {
+		padding: 1.5em 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		font-size: 4rem;
+		padding-left: 1em;
+	}
+
+	&__item {
+		text-decoration: none;
+		font-size: 2.5rem;
+		color: c.$pure-black;
+		padding: 2em 1em;
+		cursor: pointer;
+		font-weight: 300;
+		transition: color 0.3s, background-color 0.3s;
+
+		&:hover {
+			color: c.$pure-white;
+			background-color: c.$pure-black;
+		}
+	}
+
+	h2 {
+		display: inline-block;
+	}
+}

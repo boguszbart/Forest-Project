@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!--  @include 'styles.kit' -->
+	</head>
+	<body>
+		<!--  @include 'nav.kit' -->
+		<main>
+			<section class="form">
+				<div class="wrapper-small">
+					<div class="form__content">
+						<div class="form__content__contact">
+							<h2>Skontaktuj się z nami</h2>
+							<label for="full name">Imię i nazwisko</label>
+							<input type="text" id="full name" />
+							<label for="email adress">Adres e-mail</label>
+							<input type="email" id="email adress" />
+							<label for="subject">Temat</label>
+							<input type="text" id="subject" />
+							<label for="message">Wiadomość</label>
+							<textarea type="textarea" id="message"></textarea>
+
+							<button class="form__content__contact__button">Wyślij wiadomość</button>
+						</div>
+						<div class="form__content__map">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159.99352677238815!2d19.892782251555232!3d50.08822597564295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1666629009054!5m2!1spl!2spl"
+								style="border: 0"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div class="form__content__cards">
+							<div class="form__content__card">
+								<span class="form__content__card__icon"><i class="fa-solid fa-location-dot"></i></span>
+								<p class="form__content__card__paragraph">Adres: Jasnogórska 2, Kraków </p>
+							</div>
+							<div class="form__content__card">
+								<span class="form__content__card__icon"><i class="fa-solid fa-phone"></i></span>
+								<p class="form__content__card__paragraph">Telefon: <a href="tel:+489999999999">+489999999999</a></p>
+							</div>
+							<div class="form__content__card">
+								<span class="form__content__card__icon"><i class="fa-solid fa-paper-plane"></i></span>
+								<p class="form__content__card__paragraph">Email: forest@forest.com </p>
+							</div>
+							<div class="form__content__card">
+								<span class="form__content__card__icon"><i class="fa-solid fa-earth-europe"></i></span>
+								<p class="form__content__card__paragraph">Strona internetowa: <a href="index.html">forest.com</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!--  @include 'footer.kit' -->
+		<script src="../dist/js/script.min.js"></script>
+	</body>
+</html>

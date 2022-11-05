@@ -1,0 +1,32 @@
+.about-us {
+	margin-bottom: 1em;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__img {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	&__img2 {
+		display: none;
+	}
+
+	&__text {
+		padding: 1em 1em;
+
+		&--headline {
+			padding-bottom: 0.5em;
+			font-size: 2.5rem;
+		}
+
+		&--paragraph {
+			text-align: justify;
+			letter-spacing: 0.5px;
+		}
+	}
+}

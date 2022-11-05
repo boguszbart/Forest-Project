@@ -1,0 +1,28 @@
+@media (min-width: 1400px) {
+	.header {
+		&__hero-text {
+			padding-left: 0;
+		}
+	}
+	.nav-desktop {
+		&__logo {
+			padding-left: 0;
+		}
+	}
+
+	.offert {
+		&__cards {
+			margin: 2em 0;
+		}
+	}
+
+	.footer {
+		padding: 0;
+		&-content {
+			padding: 4em 0;
+			&__logo {
+				margin: 0;
+			}
+		}
+	}
+}

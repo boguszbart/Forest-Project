@@ -1,0 +1,82 @@
+@use '../utilities/colors' as c;
+
+.form {
+	padding: 7em 0;
+	&__content {
+		display: flex;
+		flex-direction: column;
+
+		&__contact {
+			display: flex;
+			flex-direction: column;
+			background-color: c.$contact-background;
+			padding: 1em;
+
+			label {
+				padding: 0.7em 0;
+			}
+
+			input {
+				height: 30px;
+			}
+
+			input,
+			textarea {
+				border: 0;
+			}
+
+			textarea {
+				resize: vertical;
+				margin-bottom: 1em;
+			}
+
+			&__button {
+				width: 200px;
+				align-self: center;
+				padding: 1em 2em;
+				color: c.$pure-white;
+				border-radius: 5px;
+				background-color: c.$focus-color;
+				border: none;
+				cursor: pointer;
+			}
+		}
+
+		&__map {
+			width: 100%;
+			iframe {
+				width: 100%;
+				height: 450px;
+			}
+		}
+
+		&__cards {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			margin-top: 2em;
+		}
+
+		&__card {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&__icon {
+				font-size: 3rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 90px;
+				height: 90px;
+				background-color: c.$focus-color;
+				border-radius: 50%;
+			}
+
+			&__paragraph {
+				text-align: center;
+				margin: 2em 0;
+			}
+		}
+	}
+}

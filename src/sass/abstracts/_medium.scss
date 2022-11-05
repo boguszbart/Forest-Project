@@ -1,0 +1,156 @@
+@media (min-width: 992px) {
+	.header {
+		&__paragraph {
+			font-size: 3rem;
+		}
+
+		&__headline {
+			font-size: 5rem;
+		}
+	}
+
+	.about-us {
+		margin-bottom: 5em;
+		&__container {
+			flex-direction: row;
+		}
+
+		&__img2 {
+			max-width: 40%;
+			object-fit: cover;
+		}
+
+		&__text {
+			padding-left: 5em;
+			&--paragraph {
+				text-align: left;
+				letter-spacing: 1px;
+				word-spacing: 3px;
+				line-height: 40px;
+			}
+		}
+	}
+	.adventure {
+		&__headline {
+			font-size: 4.5rem;
+		}
+	}
+
+	.offert {
+		&__paragraph {
+			font-size: 2.5rem;
+		}
+
+		&__cards {
+			margin: 2em 0;
+			flex-direction: row;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			width: 40%;
+			padding: 3em 2em;
+			&__headline {
+				font-size: 3.5rem;
+			}
+
+			&__paragraph {
+				margin-top: 1.5rem;
+				font-size: 2rem;
+				text-align: left;
+				padding-left: 20%;
+			}
+
+			&__button {
+				margin-top: 1em;
+				padding: 0.5em 3em;
+				font-size: 2rem;
+			}
+		}
+	}
+	.footer {
+		padding-top: 4em;
+
+		&__date {
+			padding: 2em 0;
+		}
+
+		&-content {
+			display: grid;
+			grid-template-columns: 300px repeat(auto-fill, 50px);
+			grid-template-rows: 1fr;
+
+			&__logo {
+				display: block;
+				margin-left: 2em;
+
+				i {
+					font-size: 5.5rem;
+				}
+			}
+
+			&__info-card {
+				&__headline {
+					padding: 0 0 1rem 0;
+					font-size: 3rem;
+				}
+
+				&__link {
+					font-size: 2rem;
+					padding: 0.5em 0;
+				}
+
+				&--first {
+					grid-column: -14 / -10;
+				}
+
+				&--second {
+					grid-column: -10 / -5;
+				}
+
+				&--third {
+					grid-column: -5 / -3;
+				}
+			}
+		}
+	}
+
+	.form {
+		&__content {
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			&__contact {
+				width: 50%;
+				padding: 2em;
+
+				&__button {
+					margin-bottom: -2em;
+				}
+			}
+
+			&__map {
+				width: 50%;
+				iframe {
+					height: 100%;
+				}
+			}
+
+			&__cards {
+				width: 100%;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: flex-start;
+			}
+
+			&__card {
+				width: 20%;
+
+				&__paragraph {
+					margin: 2em 0 0 0;
+				}
+			}
+		}
+	}
+}

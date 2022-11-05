@@ -1,0 +1,26 @@
+@use '../utilities/colors' as c;
+
+.cookies {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: c.$cookies-background;
+	text-align: center;
+	padding: 0.5em 1em;
+	z-index: 30;
+
+	&__paragraph {
+		padding-top: 1em;
+		&__link {
+			color: c.$focus-color;
+			text-decoration: none;
+		}
+	}
+
+	&__button {
+		margin: 1em 0;
+		padding: 0.5em 1em;
+		border-radius: 5px;
+		background: none;
+	}
+}

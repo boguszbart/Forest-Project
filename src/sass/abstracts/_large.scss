@@ -1,0 +1,17 @@
+@media (min-width: 1200px) {
+	.adventure {
+		&__headline {
+			font-size: 5.5rem;
+		}
+	}
+	.offert {
+		&__cards {
+			justify-content: space-between;
+			margin: 2em 3em;
+		}
+
+		&__card {
+			width: 30%;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+@media (min-width: 576px) {
+	.section__headline {
+		font-size: 4rem;
+	}
+
+	.header {
+		&__paragraph {
+			font-size: 2rem;
+		}
+
+		&__headline {
+			font-size: 4.5rem;
+		}
+	}
+
+	.about-us {
+		&__text {
+			h3 {
+				font-size: 3.5rem;
+			}
+
+			p {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.adventure {
+		height: 30vh;
+		&__headline {
+			font-size: 3rem;
+			padding: 1em;
+		}
+	}
+
+	.offert {
+		&__paragraph {
+			font-size: 2.5rem;
+		}
+
+		&__card {
+			&__headline {
+				font-size: 3.5rem;
+			}
+
+			&__price {
+				font-size: 4rem;
+			}
+
+			&__paragraph {
+				margin-top: 6px;
+				font-size: 2rem;
+			}
+
+			&__button {
+				font-size: 2rem;
+			}
+		}
+	}
+}
